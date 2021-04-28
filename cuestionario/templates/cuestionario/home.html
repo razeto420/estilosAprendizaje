@@ -1,0 +1,48 @@
+{% extends 'cuestionario/base.html' %}
+{% load static %}
+
+{% block title %} Inicio {% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-xl-9 row">
+            <div class="col-7 my-5">
+                <h2 class="mb-5">Descubre tu estilo de aprendizaje</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, maxime velit excepturi at ducimus molestiae soluta laudantium facilis, fugit similique provident reprehenderit dolores quasi temporibus iste ullam tenetur cupiditate delectus!</p>
+            </div>
+            <div class="col-5 my-5">
+                    <div class="justify-content-center">
+                        <div class="col-8 mx-auto mb-3">
+                            <img src="{%static 'cuestionario/img/estilos-aprendizaje.png' %}" width="100%" height="100%" alt="">
+                        </div>
+                        <div class="col-6 mx-auto">
+                            <a class="btn btn-secondary btn-lg" href="{% url 'Pregunta' %}">Realizar test</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-7 my-5">
+                <h2 class="mb-5">Test de Vark</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, maxime velit excepturi at ducimus molestiae soluta laudantium facilis, fugit similique provident reprehenderit dolores quasi temporibus iste ullam tenetur cupiditate delectus!</p>
+            </div>
+            <div class="col-5 my-5">
+                    <div class="justify-content-center">
+                        <div class="col-8 mx-auto mb-3">
+                            <img src="{%static 'cuestionario/img/estilos-aprendizaje.png' %}" width="100%" height="100%" alt="">
+                        </div>
+                        <div class="col-5 mx-auto">
+                            <a href="https://www.orientacionandujar.es/wp-content/uploads/2014/05/TEST-DE-VARK.pdf" class="btn btn-warning btn-lg active mx-auto" role="button" aria-pressed="true">Saber más</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="col-xl-3">
+            <div class="justify-content-center">
+                <h2 class="my-5">¿ Quiénes Somos ?</h2>
+                <p class="my-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, pariatur consequuntur dolorem soluta eaque cumque alias hic, quaerat nulla laudantium nemo necessitatibus architecto sequi sapiente quas officia! Distinctio, tenetur eveniet?</p>
+                <div class="mx-auto col-9">
+                    <a href="https://padlet.com/ymarquez9/72apq5rd108v4syp" class="btn btn-primary btn-lg active" role="button">Ver más proyectos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

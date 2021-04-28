@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - Libre Aprendizaje</title>
+
+    <link href="{%static 'cuestionario/css/base.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="base-header">
+        <div class="d-flex bd-highlight mb-3 ml-5">
+            <div class="p-2 bd-highlight base-header-logo ml-5">
+                <a href="{% url 'Home' %}">
+                    <img src="{%static 'cuestionario/img/logo.png' %}" width="100%" height="100%" alt="">
+                </a>
+                   
+            </div>
+            <div class="p-2 bd-highlight mt-3 ml-3">
+                <h1>Libre Aprendizaje</h1>
+            </div>
+            <div class="ml-auto p-2 bd-highlight mt-4 mr-5">
+                <p>Bienvenido/a</p>
+            </div>
+        </div>
+        <div class="d-flex bd-highlight base-nav">
+            <div class="p-2 bd-highlight my-auto ml-4">
+                <div class="base-nav-logo">
+                    <a href="{% url 'Home' %}">
+                        <img src="{%static 'cuestionario/img/home.png' %}" width="100%" height="100%" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="p-2 bd-highlight my-auto">
+                <nav class="nav">
+                    <a class="nav-link text-dark" href="{% url 'Home' %}">Inicio</a>
+                </nav>
+            </div>
+          
+        </div>   
+    </header>
+    <main class="container mt-4">
+        {% block content %}
+        {% endblock %} 
+    </main>
+    <footer>
+        <div class="d-flex bd-highlight my-auto base-footer">
+            <div class="p-2 bd-highlight my-auto ml-5">
+               <p class="my-auto">® Copyright - Libre Aprendizaje</p> 
+            </div>
+            <div class="p-2 bd-highlight ml-auto d-flex mr-5 my-auto">
+                <p class="my-auto"><a href="https://ucontinental.edu.pe/" class="text-dark">Universidad Continental</a></p>
+                <div class="base-footer-continental ml-3">
+                    <img src="{%static 'cuestionario/img/continental.png' %}" width="100%" height="100%" alt="">
+                </div> 
+            </div>
+        </div>
+      </footer>
+</body>
+</html>
