@@ -58,11 +58,6 @@ a{
 
 .base-footer{
     width: 100%;
-    position: relative;
-    clear: both;
-    margin-top: 0px;
-    padding-top: 0px;
-    overflow: visible;
     height: 5rem;
     background-color: var(--background-color-secondary);
 }
@@ -70,4 +65,16 @@ a{
 .base-footer-continental{
     width: 4rem;
     height: 4rem;
+}
+
+/* Pantalla Pregunta */
+
+.pregunta-imagen{
+    width: 40rem;
+}
+
+/*Estilo Contenedor principal */
+
+.base-container{
+    min-height: calc(100vh - 10rem - 8rem);
 }
